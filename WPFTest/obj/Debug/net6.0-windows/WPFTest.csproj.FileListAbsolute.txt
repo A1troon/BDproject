@@ -55,3 +55,5 @@ D:\c#projects\WPFTest\WPFTest\bin\Debug\net6.0-windows\runtimes\win\lib\netstand
 D:\c#projects\WPFTest\WPFTest\obj\Debug\net6.0-windows\WPFTest.csproj.CopyComplete
 D:\c#projects\WPFTest\WPFTest\obj\Debug\net6.0-windows\Login.g.cs
 D:\c#projects\WPFTest\WPFTest\obj\Debug\net6.0-windows\Login.baml
+D:\c#projects\WPFTest\WPFTest\obj\Debug\net6.0-windows\Registration.g.cs
+D:\c#projects\WPFTest\WPFTest\obj\Debug\net6.0-windows\Registration.baml

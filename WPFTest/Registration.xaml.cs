@@ -23,5 +23,24 @@ namespace WPFTest
         {
             InitializeComponent();
         }
+        private void Accept_Click(object sender, RoutedEventArgs e)
+        {
+            using (myUsersContext db = new myUsersContext())
+            {
+                UsersLogin userLogin = new UsersLogin(passwordBox.Password, loginBox.Text);
+                if (db.UsersLogins.Where((UsersLogin user)=>  user.Name == loginBox.Text).FirstOrDefault() == null)
+                {
+                    db.UsersLogins.Add(userLogin);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show("Такой пользователь уже есть!");
+                    return;
+                }
+            }
+                this.DialogResult = true;
+        }
     }
+
 }

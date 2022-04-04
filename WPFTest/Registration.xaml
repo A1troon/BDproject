@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFTest"
         mc:Ignorable="d"
-        Title="Registration" Height="450" Width="800">
-    <Grid>
-        
+        Title="Registration" Height="192" Width="390">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock>Введите Логин:</TextBlock>
+        <TextBox Name="loginBox" Grid.Row="1" MinWidth="250"></TextBox>
+        <TextBlock Grid.Row="2">Введите пароль:</TextBlock>
+        <PasswordBox Name="passwordBox" Grid.Row="3" MinWidth="250"></PasswordBox>
+
+        <WrapPanel Grid.Row="4" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="0,0,10,0">OK</Button>
+            <Button IsCancel="True" MinWidth="60">Отмена</Button>
+        </WrapPanel>
+
     </Grid>
 </Window>

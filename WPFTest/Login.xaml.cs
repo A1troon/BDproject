@@ -25,14 +25,15 @@ namespace WPFTest
             Button btn;
         }
 
-        private void Registration(object sender, RoutedEventArgs e)
+        private void Registrating(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Registration regWindow = new Registration();
+            regWindow.ShowDialog();
         }
 
         private void Loggining(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

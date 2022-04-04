@@ -21,11 +21,11 @@
         </WrapPanel>
         <WrapPanel Grid.Row="3" HorizontalAlignment="Center">
             <Label Margin="8">Password:</Label>
-            <TextBox Width="200"/>
+            <PasswordBox Width="200"/>
         </WrapPanel>
         <WrapPanel Grid.Row="4" HorizontalAlignment="Center" Margin="16" >
             <Button  Width="100" Margin="5" Click="Loggining">Вход</Button>
-            <Button Width="100" Margin="5" Click="Registration">Регистрация</Button>
+            <Button Width="100" Margin="5" Click="Registrating">Регистрация</Button>
         </WrapPanel>
     </Grid>
 
