@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="618" Width="853" Initialized="Window_Initialized">
+    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled"
+                       Margin="12,0,0,0">
+    <StackPanel>
+        <StackPanel Name="MainPanel" Orientation="Vertical" >
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Name="ResultPanel">
+                <Label FontSize="28" Content="Результат" HorizontalAlignment="Center"></Label>
+                <StackPanel Name="AnswersPanel" Orientation="Horizontal">
+                    <Label FontSize="28" Name="Answered"></Label>
+                    <Label FontSize="28" Name="Correct"></Label>
+                </StackPanel>
+                <Label FontSize="28" Name="Rating"></Label>
+            </StackPanel>
+        </StackPanel>
+        </ScrollViewer>
+</Window>
+
