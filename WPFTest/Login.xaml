@@ -17,11 +17,11 @@
         </Grid.RowDefinitions>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
             <Label Margin="8">User:</Label>
-            <TextBox Width="200"/>
+            <TextBox Name="loginBox" Width="200"/>
         </WrapPanel>
         <WrapPanel Grid.Row="3" HorizontalAlignment="Center">
             <Label Margin="8">Password:</Label>
-            <PasswordBox Width="200"/>
+            <PasswordBox Name="passwordBox" Width="200"/>
         </WrapPanel>
         <WrapPanel Grid.Row="4" HorizontalAlignment="Center" Margin="16" >
             <Button  Width="100" Margin="5" Click="Loggining">Вход</Button>

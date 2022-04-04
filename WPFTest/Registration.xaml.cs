@@ -27,10 +27,9 @@ namespace WPFTest
         {
             using (myUsersContext db = new myUsersContext())
             {
-                UsersLogin userLogin = new UsersLogin(passwordBox.Password, loginBox.Text);
                 if (db.UsersLogins.Where((UsersLogin user)=>  user.Name == loginBox.Text).FirstOrDefault() == null)
                 {
-                    db.UsersLogins.Add(userLogin);
+                    db.UsersLogins.Add(new UsersLogin(passwordBox.Password, loginBox.Text));
                     db.SaveChanges();
                 }
                 else

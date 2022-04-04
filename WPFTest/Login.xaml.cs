@@ -33,7 +33,21 @@ namespace WPFTest
 
         private void Loggining(object sender, RoutedEventArgs e)
         {
-            
+            using (myUsersContext db = new myUsersContext())
+            {
+                if (db.UsersLogins
+                    .Where((UsersLogin user) => user.Name == loginBox.Text&&user.Password == passwordBox.Password)
+                    .FirstOrDefault() != null)
+                {
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Неверный логин или пароль");
+                }
+            }
         }
     }
 }
